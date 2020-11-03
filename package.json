@@ -1,6 +1,6 @@
 {
-  "name": "cra-template-codeleaf-sdk-common",
-  "version": "1.0.1",
+  "name": "@codeleaf-sdk/cra-template-codeleaf-sdk-common",
+  "version": "1.0.2",
   "keywords": [
     "react",
     "create-react-app",
