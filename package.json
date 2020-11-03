@@ -1,0 +1,29 @@
+{
+  "name": "cra-template-codeleaf-sdk-common",
+  "version": "1.0.1",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "mobx",
+    "template",
+    "typescript",
+    "codeleaf-sdk"
+  ],
+  "description": "Improved CRA template for new projects based on @codeleaf-sdk/core",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codeleaf-sdk/cra-template-codeleaf-sdk-common.git",
+    "directory": ""
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=10"
+  },
+  "bugs": {
+    "url": "https://github.com/codeleaf-sdk/cra-template-codeleaf-sdk-common/issues"
+  },
+  "files": [
+    "template",
+    "template.json"
+  ]
+}
