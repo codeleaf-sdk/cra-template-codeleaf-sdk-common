@@ -17,6 +17,7 @@
       "react-dom": "^16.13.1"
     },
     "devDependencies": {
+      "@codeleaf-sdk/cli": "^1.0.2",
       "@testing-library/jest-dom": "^4.2.4",
       "@testing-library/react": "^9.3.2",
       "@testing-library/user-event": "^7.1.2",
@@ -49,7 +50,8 @@
       "start": "react-app-rewired start",
       "build": "react-app-rewired build",
       "test": "react-scripts test",
-      "eject": "react-scripts eject"
+      "eject": "react-scripts eject",
+      "add:page": "codeleaf-cli -p -t ./src/pages"
     },
     "eslintIgnore": [
       "node_modules",
