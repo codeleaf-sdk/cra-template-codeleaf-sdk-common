@@ -4,8 +4,8 @@ import { HelloModule } from './index';
 import { Box, Typography, Paper } from '@material-ui/core';
 
 const Page: FC = () => {
-  const { store } = useContext(HelloModule.Context);
-  const { message, subMessage } = store;
+  const { Store } = useContext(HelloModule);
+  const { message, subMessage } = Store;
 
   return (
     <Box padding="24px" width="480px">
