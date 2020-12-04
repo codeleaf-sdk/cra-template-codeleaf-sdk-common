@@ -1,10 +1,10 @@
-import React, { FC, useContext } from 'react';
+import React, { FC } from 'react';
 import { observer } from 'mobx-react';
 import { HelloModule } from './index';
 import { Box, Typography, Paper } from '@material-ui/core';
 
 const Page: FC = () => {
-  const { Store } = useContext(HelloModule);
+  const { Store } = HelloModule;
   const { message, subMessage } = Store;
 
   return (
