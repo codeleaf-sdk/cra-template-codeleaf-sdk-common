@@ -44,14 +44,33 @@
       "prettier": "^2.1.2",
       "react-app-rewired": "^2.1.6",
       "react-scripts": "3.4.3",
-      "typescript": "^4.1.2"
+      "typescript": "^4.1.2",
+      "husky": "^5.0.4",
+      "pinst": "^2.1.1",
+      "lint-staged": "^10.2.11"
     },
     "scripts": {
       "start": "react-app-rewired start",
       "build": "react-app-rewired build",
       "test": "react-scripts test",
       "eject": "react-scripts eject",
-      "add:page": "codeleaf-cli -p -t ./src/pages"
+      "add:page": "codeleaf-cli -p -t ./src/pages",
+      "postinstall": "husky install",
+      "prepublish": "pinst --disable",
+      "postpublish": "pinst --enable",
+      "lint": "eslint --ext .tsx,.ts src",
+      "precommit": "lint-staged",
+      "types-check": "tsc --project tsconfig.json --noEmit --noEmitHelpers --noErrorTruncation --strict"
+    },
+    "husky": {
+      "pre-commit": "yarn types-check && yarn lint && yarn precommit",
+      "pre-push": "yarn types-check"
+    },
+    "lint-staged": {
+      "*.{js,jsx,ts,tsx}": [
+        "eslint --fix",
+        "prettier --write"
+      ]
     },
     "eslintIgnore": [
       "node_modules",
